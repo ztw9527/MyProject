@@ -11,7 +11,7 @@ import org.sshTP1.pojo.Emp;
 import org.sshTP1.service.EmpService;
 
 /**
- * @author Administrator emp¿ØÖÆÆ÷
+ * @author Administrator empï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 @Controller
 public class EmpCotroller {
@@ -20,13 +20,14 @@ public class EmpCotroller {
 	private EmpService es;
 
 	/**
-	 * oliver 2018Äê3ÔÂ1ÈÕ sshTP1 ²éÑ¯ËùÓÐ
+	 * oliver 2018ï¿½ï¿½3ï¿½ï¿½1ï¿½ï¿½ sshTP1 ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
 	 */
 	@RequestMapping("/list")
 	public String fn1(ModelMap model) {	
 		String hql=" from Emp";
 		List<Emp> el = es.findAll(hql);
 		model.put("el", el);
+		
 		return "empList";
 	}
 	
